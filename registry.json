@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
+  "name": "aliveui",
+  "homepage": "https://aliveui.com",
   "items": [
     {
       "name": "hello-world",
@@ -57,6 +57,19 @@
         {
           "path": "registry/complex-component/hooks/use-pokemon.ts",
           "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "apple-button",
+      "type": "registry:component",
+      "title": "Apple Button",
+      "description": "A button styled after Apple's Human Interface Guidelines with smooth animations.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/apple-button/apple-button.tsx",
+          "type": "registry:component"
         }
       ]
     }
