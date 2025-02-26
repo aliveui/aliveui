@@ -1,15 +1,40 @@
 {
   "name": "aliveui",
   "version": "0.0.1",
-  "private": true,
+  "description": "A beautiful UI component library with Apple-inspired designs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "registry"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "registry:build": "shadcn build",
-    "update-shadcn": "node update-shadcn.js"
+    "update-shadcn": "node update-shadcn.js",
+    "prepublishOnly": "npm run registry:build && tsc"
   },
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "tailwind",
+    "apple",
+    "design"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/aliveui.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": true,
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
