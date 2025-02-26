@@ -1,5 +1,5 @@
 {
-  "name": "aliveui",
+  "name": "@aliveui/ui",
   "version": "0.0.1",
   "description": "A beautiful UI component library with Apple-inspired designs",
   "main": "dist/index.js",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/charlotte-main/aliveui.git"
+    "url": "https://github.com/aliveui/aliveui.git"
   },
   "publishConfig": {
     "access": "public"
