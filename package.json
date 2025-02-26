@@ -15,7 +15,8 @@
     "lint": "next lint",
     "registry:build": "shadcn build",
     "update-shadcn": "node update-shadcn.js",
-    "prepublishOnly": "npm run registry:build && tsc"
+    "prepublishOnly": "npm run build:package",
+    "build:package": "tsc -p tsconfig.build.json"
   },
   "keywords": [
     "ui",
@@ -25,11 +26,11 @@
     "apple",
     "design"
   ],
-  "author": "Your Name",
+  "author": "Charlotte",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/aliveui.git"
+    "url": "https://github.com/charlotte-main/aliveui.git"
   },
   "publishConfig": {
     "access": "public"
