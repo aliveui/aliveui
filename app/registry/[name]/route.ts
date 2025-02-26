@@ -1,15 +1,23 @@
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 import path from "path";
 import { promises as fs } from "fs";
 import { registryItemSchema } from "shadcn/registry";
 
-// This route shows an example for serving a component using a route handler.
+// Define the correct segment config for Next.js 15
+export const dynamic = "force-dynamic";
+
+// This is the correct type definition for Next.js 15 route handlers
 export async function GET(
-  request: Request,
-  { params }: { params: { name: string } }
+  request: NextRequest,
+  context: {
+    params: {
+      name: string;
+    };
+  }
 ) {
   try {
-    const { name } = params;
+    const { name } = context.params;
     // Cache the registry import
     const registryData = await import("@/registry.json");
     const registry = registryData.default;
